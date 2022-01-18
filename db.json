@@ -1,0 +1,199 @@
+{
+  "sections": [
+    {
+      "id": 1,
+      "title": "STAIRS AND HALLWAYS",
+      "items": [
+        "Appropriate lighting",
+        "Satisfactory housekeeping",
+        "Landings free of obstacles and storage",
+        "Handrails in good repair",
+        "Nonskid treads",
+        "Elevation differences are clearly marked",
+        "Lockers do not obstruct access",
+        "Lockers secure and in good condition",
+        "Readily accessible 5ABC fire extinguishers"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "AIR QUALITY, VENTILATION, ENVIRONMENT",
+      "items": [
+        "Proper handling, storage, labeling, and disposal of chemicals, gas, petroleum, herbicides, and other hazardous materials; maintenance of Material Safety Data Sheets",
+        "Appropriate closure of abandoned wells/cisterns",
+        "Appropriate disposal of solid waste",
+        "Satisfactory housekeeping/sanitization measures",
+        "Documentation of annual exhaust/intake inspection",
+        "Documentation of semiannual lead testing for drinking fountain",
+        "Documentation of annual carbon monoxide and radon inspection"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "LIGHTING",
+      "items": [
+        "Appropriate lighting",
+        "Exit lights illuminated and have secondary power source",
+        "Operational emergency exit lighting has secondary power source",
+        "Lighting fixtures are mounted, clean, and operational"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "FLOOR SAFETY",
+      "items": [
+        "Floors in good repair; no obstacles, protruding objects, or indentations",
+        "Carpet is secured with no curled edges",
+        "Nonslip adhesive treads on stairs, floors, and ramps",
+        "Elevation differences are clearly marked",
+        "Use of nonslip floormats at all entrances and exits in inclement weather",
+        "Wet floor signs are displayed when necessary",
+        "Spills and moisture are cleaned immediately"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "MECHANICAL AND ELECTRICAL",
+      "items": [
+        "Building is free of noncode electrical wiring",
+        "Electrical boxes are properly secured",
+        "Switches, electrical outlets, and covers are in good condition",
+        "Building is free of permanent use of extension cords in place of permanent wiring",
+        "Electrical loads are placed on power strips (power surges) and are within proper amp rating of circuit",
+        "Electrical panels are free of exposed wires or terminals",
+        "Electrical receptacles located outdoors or in close proximity to sinks, wet areas, pipes, or other grounded equipment protected by ground fault circuit interrupters (GFCI)",
+        "Electrical motors are clean and lubricated periodically",
+        "Electrical panel switches and circuit breakers are labeled to indicate the equipment they control",
+        "Electrical cords are coiled and stored in the proper place"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "STORAGE",
+      "items": []
+    },
+    {
+      "id": 7,
+      "title": "STORAGE",
+      "items": [
+        "Satisfactory housekeeping",
+        "Restricted storage areas are locked; keys are in a safe and accessible location for administrators and identified staff",
+        "Chemicals and medications are stored properly in locked cabinets or closets",
+        "No storage items within 18 inches of the sprinkler system",
+        "Heavy items are stored on lower shelves"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "EQUIPMENT",
+      "items": [
+        "Operational fire alarm systems (audio & visual)",
+        "Operational 5ABC fire extinguishers with up-todate inspection tags. In proper place and adequately charged",
+        "Operational 5ABC fire extinguishers with up-todate inspection tags. Date of last inspection within last 12 months",
+        "Emergency procedures with ADA guidelines are clearly posted",
+        "Operational smoke detectors",
+        "Sprinkler system tested and maintained quarterly per NFPA 25",
+        "Clean-up kits for hazardous spills and bloodborne pathogens",
+        "First aid kit is adequately stocked and readily available",
+        "Installed fire hoses in good condition and operational",
+        "Proper disposal of discarded smoke detectors"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "TRAINING",
+      "items": [
+        "Documentation stating that staff has been trained in handling body fluids: Spill kits",
+        "Documentation stating that staff has been trained in handling body fluids: Absorption control",
+        "Documentation stating that staff has been trained in handling body fluids: Proper disposal of fluids",
+        "Documentation stating that staff has been trained in handling body fluids: Handwashing",
+        "Documentation stating that staff has been trained in handling body fluids: Housekeeping",
+        "Documentation stating that staff has been trained in handling body fluids: Personal protective equipment",
+        "Documentation stating that staff has been trained in emergency action plans (drills): Fire (minimum of two drills per year)",
+        "Documentation stating that staff has been trained in emergency action plans (drills): Tornado",
+        "Documentation stating that staff has been trained in emergency action plans (drills): Earthquake",
+        "Documentation stating that staff has been trained in emergency action plans (drills): Hazardous materials handling, storage, and disposal",
+        "Documentation of safety training for staff (administrative, faculty, custodial); plans are in place to accommodate people with disabilities",
+        "Staff has contact with outside agencies to consult on school safety training matters",
+        "Incident/accident documentation: comprehensive documentation of any accidents/injuries and corrective actions",
+        "Safety coordinator has been designated"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "items": [
+        {
+          "problem": "ss",
+          "action": "ss",
+          "date": "2022-01-11",
+          "title": "Appropriate lighting"
+        }
+      ],
+      "title": "STAIRS AND HALLWAYS"
+    },
+    {
+      "id": 2,
+      "items": [
+        {
+          "problem": "sss",
+          "action": "ss",
+          "date": null,
+          "title": "Appropriate disposal of solid waste"
+        },
+        {
+          "problem": "roblem",
+          "action": "ss",
+          "date": "2022-01-05",
+          "title": "Proper handling, storage, labeling, and disposal of chemicals, gas, petroleum, herbicides, and other hazardous materials; maintenance of Material Safety Data Sheets"
+        }
+      ],
+      "title": "AIR QUALITY, VENTILATION, ENVIRONMENT"
+    },
+    {
+      "id": 7,
+      "title": "STORAGE",
+      "items": []
+    },
+    {
+      "id": 4,
+      "items": [
+        {
+          "problem": "Action",
+          "action": null,
+          "date": null,
+          "title": "Elevation differences are clearly marked"
+        }
+      ],
+      "title": "FLOOR SAFETY"
+    },
+    {
+      "id": 3,
+      "title": "LIGHTING",
+      "items": []
+    }
+  ],
+  "checked": [
+    {
+      "item": "Appropriate lighting",
+      "sectionId": 3,
+      "id": 3
+    },
+    {
+      "item": "Appropriate lighting",
+      "sectionId": 1,
+      "id": 4
+    },
+    {
+      "item": "Satisfactory housekeeping",
+      "sectionId": 1,
+      "id": 5
+    },
+    {
+      "item": "Landings free of obstacles and storage",
+      "sectionId": 1,
+      "id": 6
+    }
+  ]
+}

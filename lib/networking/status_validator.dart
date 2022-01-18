@@ -1,0 +1,30 @@
+import 'package:dio/dio.dart';
+import 'package:safe_form/utilities/exception/custom_networking_exception.dart';
+
+class StatusValidationInterceptor extends InterceptorsWrapper {
+  @override
+  void onResponse(Response response, ResponseInterceptorHandler handler) {
+    switch (response.statusCode) {
+      case 200:
+      case 201:
+        handler.next(response);
+        break;
+      default:
+        throw FetchDataException(
+          'An error occurred',
+        );
+    }
+  }
+
+  @override
+  void onError(DioError err, ErrorInterceptorHandler handler) {
+    switch (err.response!.statusCode) {
+      case 404:
+        throw BadRequestException(err.response!.statusMessage);
+      default:
+        throw FetchDataException(
+          'An error occurred',
+        );
+    }
+  }
+}

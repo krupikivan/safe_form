@@ -1,0 +1,27 @@
+name: safe_form
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.2 # State Management
+  equatable: ^2.0.3 # Adds support to make a class conform to the equatable protocol
+  get_it: ^7.2.0 # Service locator
+  modal_bottom_sheet: ^2.0.0
+  dio: ^4.0.0 # All networking requests
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
