@@ -1,10 +1,10 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:safe_form/models/item_detail.dart';
 import 'package:safe_form/screens/base_view.dart';
 import 'package:safe_form/services/navigation_service.dart';
 import 'package:safe_form/utilities/locator.dart';
 import 'package:safe_form/view_models/form_modal_view_model.dart';
-
 import 'custom_icon_widget.dart';
 import 'custom_text_field_widget.dart';
 
@@ -25,7 +25,6 @@ class _FormModalState extends State<FormModal> {
   late TextEditingController _actionController;
   late TextEditingController _problemController;
   late TextEditingController _dateController;
-
   @override
   void initState() {
     _actionController = TextEditingController();
@@ -37,7 +36,7 @@ class _FormModalState extends State<FormModal> {
   @override
   Widget build(BuildContext context) {
     const separator = SizedBox(
-      height: 30,
+      height: 20,
     );
     return BaseView<FormModalViewModel>(
       viewModel: widget.viewModel,
@@ -98,6 +97,29 @@ class _FormModalState extends State<FormModal> {
                 controller: _dateController,
                 readOnly: true,
               ),
+              separator,
+              if (viewModel.file == null)
+                GestureDetector(
+                  onTap: viewModel.openCamera,
+                  child: const Icon(
+                    Icons.camera_alt,
+                    size: 35,
+                    color: Colors.black54,
+                  ),
+                ),
+              if (viewModel.file != null)
+                Container(
+                  height: 80,
+                  width: 80,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.fitWidth,
+                      image: FileImage(
+                        File(viewModel.file!.path),
+                      ),
+                    ),
+                  ),
+                ),
               separator,
               GestureDetector(
                 onTap: () => widget.onSave(viewModel.itemDetail),

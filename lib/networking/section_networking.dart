@@ -4,6 +4,7 @@ import 'package:safe_form/models/section.dart';
 import 'package:safe_form/models/section_items.dart';
 import 'package:safe_form/services/api_service.dart';
 import 'package:safe_form/utilities/exception/custom_networking_exception.dart';
+import 'package:safe_form/utilities/failures/failure.dart';
 import 'package:safe_form/utilities/failures/failures.dart';
 import 'package:safe_form/utilities/locator.dart';
 
@@ -73,6 +74,8 @@ class SectionNetworking {
             (e) => Section.fromJson(e),
           )
           .toList();
+    } on NoInternetConnectionFailure {
+      throw const Failure('No Internet connection');
     } catch (e) {
       rethrow;
     }

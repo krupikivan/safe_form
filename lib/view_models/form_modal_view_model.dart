@@ -1,3 +1,4 @@
+import 'package:image_picker/image_picker.dart';
 import 'package:safe_form/models/item_detail.dart';
 import 'package:safe_form/networking/section_networking.dart';
 import 'package:safe_form/utilities/locator.dart';
@@ -16,8 +17,9 @@ class FormModalViewModel extends BaseViewModel {
   late ItemDetail _itemDetail;
 
   String get title => _title;
-
+  XFile? _file;
   ItemDetail get itemDetail => _itemDetail;
+  XFile? get file => _file;
 
   Future get getItemDetails async {
     try {
@@ -26,6 +28,16 @@ class FormModalViewModel extends BaseViewModel {
     } catch (e) {
       rethrow;
     }
+  }
+
+  Future openCamera() async {
+    final ImagePicker _picker = ImagePicker();
+    _file = await _picker.pickImage(
+      source: ImageSource.gallery,
+      imageQuality: 40,
+    );
+    _itemDetail = _itemDetail.copyWith(image: _file);
+    notifyListeners();
   }
 
   void setDate(String value) {

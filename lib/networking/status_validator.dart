@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:safe_form/utilities/exception/custom_networking_exception.dart';
+import 'package:safe_form/utilities/failures/failures.dart';
 
 class StatusValidationInterceptor extends InterceptorsWrapper {
   @override
@@ -18,13 +21,18 @@ class StatusValidationInterceptor extends InterceptorsWrapper {
 
   @override
   void onError(DioError err, ErrorInterceptorHandler handler) {
-    switch (err.response!.statusCode) {
-      case 404:
-        throw BadRequestException(err.response!.statusMessage);
-      default:
-        throw FetchDataException(
-          'An error occurred',
-        );
+    if (err.error is SocketException) {
+      throw const NoInternetConnectionFailure();
+    }
+    if (err.response != null) {
+      switch (err.response!.statusCode) {
+        case 404:
+          throw BadRequestException(err.response!.statusMessage);
+        default:
+          throw FetchDataException(
+            'An error occurred',
+          );
+      }
     }
   }
 }

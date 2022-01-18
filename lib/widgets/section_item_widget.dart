@@ -20,7 +20,6 @@ class SectionItem extends StatelessWidget {
           ),
         ),
         height: 70,
-        padding: const EdgeInsets.symmetric(),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [

@@ -11,10 +11,13 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^6.0.2 # State Management
+  image_picker: ^0.8.4+2
   equatable: ^2.0.3 # Adds support to make a class conform to the equatable protocol
   get_it: ^7.2.0 # Service locator
   modal_bottom_sheet: ^2.0.0
+  fluttertoast: ^8.0.8
   dio: ^4.0.0 # All networking requests
+  loading_overlay: ^0.3.0 # Provides overlay widget while a screen is running an asynch command
 
 dev_dependencies:
   flutter_test:

@@ -17,7 +17,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           viewModel: SectionListViewModel(),
         ),
       );
-    case SectionDetail:
+    case SectionDetailRoute:
       final section = settings.arguments as Section;
       return _getPageRoute(
         routeName: settings.name,

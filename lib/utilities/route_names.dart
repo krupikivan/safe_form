@@ -1,2 +1,2 @@
 const SectionListRoute = '/';
-const SectionDetail = '/section-detail';
+const SectionDetailRoute = '/section-detail';

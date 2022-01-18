@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:safe_form/utilities/notifier_state.dart';
 import 'package:safe_form/view_models/section_list_view_model.dart';
+import 'package:safe_form/widgets/custom_scaffold.dart';
 import 'package:safe_form/widgets/section_item_widget.dart';
 
 import 'base_view.dart';
@@ -13,7 +15,8 @@ class SectionListScreen extends StatelessWidget {
     return BaseView<SectionListViewModel>(
       viewModel: viewModel,
       onModelReady: (model) => model.fetchAllSections,
-      builder: (context, viewModel, _) => Scaffold(
+      builder: (context, viewModel, _) => CustomScaffold(
+        isLoading: viewModel.notifierState == NotifierState.loading,
         body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: ListView(
